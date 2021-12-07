@@ -1,5 +1,7 @@
 /* Normalize your CSS file using necolas’ normalize.css with this version. */
 
+@import 'normalize.css';
+
 html {
     scroll-behavior: smooth;
     font-size: 62.5%;
