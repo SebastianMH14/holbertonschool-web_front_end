@@ -4,7 +4,7 @@
 evenly distribute the margins on both the left and and right side */
 
 *, *:before, *:after {
-    box-sizing: border-box;
+    box-sizing: content-box;
 }
 
 html {
@@ -73,6 +73,8 @@ a:active{
 
 .container {
     width: 960px;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 :root {
