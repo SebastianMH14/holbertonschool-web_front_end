@@ -1,6 +1,10 @@
-/* Normalize your CSS file using necolas’ normalize.css with this version. */
+/*  Just before the styling for html, add a universal box sizing rule */
 
 @import 'normalize.css';
+
+*, *:before, *:after {
+    box-sizing: border-box;
+}
 
 html {
     scroll-behavior: smooth;
@@ -25,6 +29,7 @@ h4, h5, h6 {
 a:link {
     color:#161616;
     text-decoration: none;
+    
 }
 
 a:visited {
