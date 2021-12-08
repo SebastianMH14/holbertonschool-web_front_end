@@ -2,8 +2,8 @@
 
 @import 'normalize.css';
 
-* {
-    box-sizing: border-box;
+*, *:before, *:after {
+    box-sizing: content-box;
 }
 
 html {
