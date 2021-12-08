@@ -4,7 +4,7 @@
 evenly distribute the margins on both the left and and right side */
 
 *, *:before, *:after {
-    box-sizing: content-box;
+    box-sizing: border-box;
 }
 
 html {
