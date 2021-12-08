@@ -109,12 +109,9 @@ a:active{
     margin: var(--nav-item-margin);
 }
 
-.nav-item > .nav-link {
+.nav-item > .nav-link:hover {
     display: block;
     padding: 0.5rem;
-}
-
-.nav-item > .nav-link:hover {
     color: var(--nav-item-link-hover);
 }
 
