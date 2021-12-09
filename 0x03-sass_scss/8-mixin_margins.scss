@@ -1,0 +1,16 @@
+/* Margin mixin */
+@mixin bodym {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+@mixin divm {
+    margin-left: 15px;
+    margin-right: 15px; 
+}
+body {
+    @include bodym;
+}
+
+div {
+    @include divm;
+}
