@@ -1,0 +1,16 @@
+/* The background color #6D6D6D to the HTML tags body and h2 */
+$font-color: #3D3D3D;
+$background-color: #6D6D6D;
+
+body {
+    color: $font-color;
+    background-color: $background-color;
+}
+    
+p {
+    color: $font-color;
+}
+
+h2 {
+    background-color: $background-color;
+}
