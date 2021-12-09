@@ -1,0 +1,11 @@
+/* assigns the text color #3D3D3D to the HTML tags body and p. */
+$font-color: #3D3D3D;
+
+body {
+    color: $font-color
+}
+    
+p {
+    color: $font-color
+}
+
