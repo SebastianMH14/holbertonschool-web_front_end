@@ -189,10 +189,12 @@ ul.row {
     clear: both;
 }
 
-.social-link > svg {
+.social-link {
     display: block;
+}
+
+.social-link > svg {
     fill: var(--text-color);
-    
 }
 
 .footer-copyright {
