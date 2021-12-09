@@ -91,6 +91,22 @@ a:active{
     color: var(--color-primary);
 }
 
+.card-services .card-title {
+    margin: none;
+}
+
+.card-services a {
+    display: block;
+    padding: 2rem;
+    background-color: var(--color-light-grey);
+}
+
+.card-services a:hover {
+    color: var(--color-white);
+    background-color: var(--color-primary);
+    text-decoration: none;
+}
+
 .section{
     padding: var(--section-padding);
 }
@@ -184,22 +200,6 @@ ul.row {
     --text-color: var(--color-white);
     --section-title-color: var(--color-white);
     background: var(--color-black);
-}
-
-.card-title .card-services {
-    margin: none;
-}
-
-.card-services a {
-    display: block;
-    padding: 2rem;
-    background-color: var(--color-light-grey);
-}
-
-.card-services a:hover {
-    color: var(--color-white);
-    background-color: var(--color-primary);
-    text-decoration: none;
 }
 
 .row::after {
