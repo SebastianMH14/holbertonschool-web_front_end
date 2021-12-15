@@ -1,0 +1,56 @@
+:root {
+    --box1: #000012;
+    --box2: #1b2b53;
+    --box3: #4d5ba2;
+    --box4: #9090fc;
+    --box5: #e6c;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+}
+
+.box1 {
+    width: 100px;
+    height: 80px;
+    background-color: var(--box1);
+    font-size: 20px;
+}
+
+.box2 {
+    background-color: var(--box2);
+    font-size: 40px;
+    width: 150px;
+    height: 100px;
+}
+
+.box3 {
+    width: 250px;
+    height: 140px;
+    font-size: 80px;
+    background-color: var(--box3);
+    position: relative;
+}
+
+.box4 {
+    background-color: var(--box4);
+    font-size: 40px;
+    width: 140px;
+    height: 100px;
+}
+
+.box5 {
+    width: 100px;
+    height: 80px;
+    background-color: var(--box5);
+    font-size: 20px;
+}
