@@ -851,7 +851,7 @@
       background: none;
       cursor: pointer;
       z-index: 3;
-      transition: width 0.4s cubic-bezier(0, 0.795, 0, 1)
+      transition: width 0.4s cubic-bezier(0, 0.795, 0, 1);
     }
 
     .form-search input[type='search']:focus {
