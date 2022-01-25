@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+
+    <meta charset="utf-8" />
+    <title>Task 0</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
+        integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous">
+        </script>
+</head>
+
+<body>
+
+    <script type="application/javascript">
+        $(document).ready(function () {
+            function createFamilyTree() {
+                $("body").append(
+                    $("<table>").append(
+                        $("<thead>").append(
+                            $('<tr>').append(
+                                $('<th>').text("Firstname"),
+                                $('<th>').text("Lastname"),
+                            )),
+                        $('<tbody>').append(
+
+                        ),
+                    ),
+                )
+            };
+
+            function addNewMember(firstName = "", lastName = "", position = "") {
+                if (position == "before") {
+                    $("tbody").prepend(
+                        $('<tr>').append(
+                            $('<td>').text(firstName),
+                            $('<td>').text(lastName),
+                            $('<td>').text("(x)").click(function () {
+                                $(this).parent().remove();
+                            }).css({ "background-color": 'orange' }),
+                        ),
+                    )
+                }
+                else {
+                    $("tbody").append(
+                        $('<tr>').append(
+                            $('<td>').text(firstName),
+                            $('<td>').text(lastName),
+                            $('<td>').text("(x)").click(function () {
+                                $(this).parent().remove();
+                            }).css({ "background-color": 'orange' }),
+                        ),
+                    )
+                }
+            };
+
+            function createForm() {
+                $("table").before("<input type='text'/> <input type='text'/>");
+                $("table").before(`<select>
+              <option value='before'>Before</option>
+              <option value='after'>After</option>
+            </select>`);
+                $("table").before("<input type='submit' />");
+
+                $("input[type='submit']").click(function () {
+                    const name = $("input[type='text']").first().val();
+                    const lastName = $("input[type='text']:nth-of-type(2)").val();
+                    const position = $("select").children("option:selected").val();
+                    addNewMember(name, lastName, position);
+
+                });
+            };
+
+                createFamilyTree();
+                createForm();
+        });
+    </script>
+
+</body>
+</html>

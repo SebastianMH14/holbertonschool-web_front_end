@@ -1,0 +1,28 @@
+{
+  "posts": [
+    {
+      "title": "123",
+      "author": "123",
+      "id": 19
+    },
+    {
+      "title": "dahfdah",
+      "author": "hfdshf",
+      "id": 21
+    },
+    {
+      "title": "",
+      "author": "hfdahfa",
+      "id": 22
+    },
+    {
+      "title": "fsafa",
+      "author": "fsaf",
+      "id": 23
+    }
+  ],
+  "comments": [],
+  "profile": {
+    "name": "typicode"
+  }
+}
